@@ -1,0 +1,14 @@
+.logo {
+    margin: 18px 0 0 22px;
+    @media #{$medium} {
+        margin: 13px 0 0 27px;
+    }
+    &__image {
+        width: 134px;
+        height: 24px;
+        @media #{$medium} {
+            width: 224px;
+            height: 40px;
+        }
+    }  
+}
