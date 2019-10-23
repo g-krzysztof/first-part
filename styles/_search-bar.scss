@@ -1,3 +1,60 @@
 .search-bar {
     display: none;
+    &__input {
+        flex-grow: 1;
+        width: 100px;
+        height: 32px;
+        border-radius: 4px 0 0 4px;
+        border: none;
+        outline: none;
+        padding: 0 0 0 10px;
+        font-size: 12px;
+        @media #{$medium} {
+            font-size: 16px;
+            height: 39px;
+        }
+        @media #{$large} {
+            min-width: 220px;
+            max-width: 435px;
+            flex-grow: 2;
+        }
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        height: 32px;
+        background-color: $red;
+        border-radius: 0 4px 4px 0;
+        border: none;
+        padding: 5px 10px;
+        color: $white;
+        outline: none;
+        cursor: pointer;
+        @media #{$medium} {
+            height: 39px;
+        }
+    }
+    &__text {
+        transition: .2s;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0 10px;
+        &:hover {
+            color: $black;
+        }
+    }
+    &__icon{
+        fill: $white;
+        height: 22px;
+        width: 21px;
+    }
+    @media #{$small} {
+        margin: 13px 0 0 20px;
+        display: flex;
+        flex-grow: 1;
+    }
+    @media #{$large} {
+        flex-grow: 0;
+        width: 435px;
+    }
 }
