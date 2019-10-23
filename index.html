@@ -10,7 +10,84 @@
 </head>
 
 <body>
-
+    <header class="header">
+        <input class="header__menu-toggle" type="checkbox" checked="true">
+        <div class="logo">
+            <img class="logo__image" src="" alt="izimoto-logo">
+        </div>
+        <div class="search-bar">
+            <input class="search-bar__input" type="text" placeholder="Wpisz nazwę części">
+            <button class="search-bar__btn">
+                <img class="search-bar__icon" src="" alt="search-icon">
+                <div class="search-bar__text">Szukaj</div>
+            </button>
+        </div>
+        <div class="categories-nav">
+            <button class="categories-nav__btn">
+                <div class="categories-nav__text">Przeglądaj kategorie</div>
+                <div class="categories-nav__toggle-icon"></div>
+            </button>
+        </div>
+        <div class="search-mobile">
+            <button class="search-mobile__btn">
+                <img class="search-mobile__icon" src="" alt="search-icon">
+            </button>
+        </div>
+        <div class="sell-button">
+            <button class="sell-button__btn">
+                <img class="sell-button__icon" src="" alt="sell-icon">
+                <div class="sell-button__text">Sprzedaj</div>
+            </button>
+        </div>
+        <button class="user">
+            <img class="user__image" src="" alt="user-icon">
+            <div class="user__toggle"></div>
+        </button>
+        <div class="user-menu">
+            <ul class="user-menu__list">
+                <li>
+                    <button class="sell-button user-menu__sell-button">
+                        <img class="sell-button__icon" src="" alt="sell-icon">
+                        <div class="sell-button__text">Sprzedaj</div>
+                    </button>
+                </li>
+                <li class="user-menu__item">
+                    <a class="user-menu__link" href="#">
+                        <div class="user-menu__icon-wrapper"></div>
+                        <div class="user-menu__text">Moje konto</div>
+                    </a>
+                </li>
+                <li class="user-menu__item">
+                    <a class="user-menu__link" href="#">
+                        <div class="user-menu__icon-wrapper"></div>
+                        <div class="user-menu__text">Historia zakupów</div>
+                    </a>
+                </li>
+                <li class="user-menu__item">
+                    <a class="user-menu__link" href="#">
+                        <div class="user-menu__icon-wrapper"></div>
+                        <div class="user-menu__text">Moje oferty</div>
+                    </a>
+                </li>
+                <li class="user-menu__item">
+                    <a class="user-menu__link" href="#">
+                        <div class="user-menu__icon-wrapper"></div>
+                        <div class="user-menu__text">Komentarze <span class="user-menu__comment">16</span></div>
+                    </a>
+                </li>
+                <li class="user-menu__item">
+                    <a class="user-menu__link" href="#">
+                        <div class="user-menu__icon-wrapper"></div>
+                        <div class="user-menu__text">Zarządzanie kontem</div>
+                    </a>
+                </li>
+                <li class="user-menu__logout">
+                    <a class="user-menu__logout-link" href="#">Wyloguj</a>
+                </li>
+            </ul>
+            <div class="user-menu__close-mobile"></div>
+        </div>
+    </header>
 </body>
 
 </html>
