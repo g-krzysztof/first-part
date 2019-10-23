@@ -1,3 +1,35 @@
 .categories-nav {
     display: none;
+    &:hover &__toggle-icon {
+        border-color: $blue;
+    }
+    &__btn {
+        display: flex;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: $white;
+        font-size: 13px;
+        line-height: 16px;
+        margin: 24px 0 0 28px;
+        cursor: pointer;
+    }
+   
+    &__toggle-icon{
+        display: none;
+        border-right: 2px solid $white;
+        border-bottom: 2px solid $white;
+        transform: rotate(45deg);
+        width: 10px;
+        height: 10px;
+        transition: .2s;
+        margin: 0 10px 0 10px;
+        @media #{$large} {
+            display: block;
+        }
+    }
+    @media #{$xlarge} {
+        display: flex;
+        flex-direction: column;
+    }
 }
