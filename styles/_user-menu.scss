@@ -117,16 +117,14 @@
             display: none;
         }
         &__item{
-            margin-left: -5px;
+            margin-left: -5px;      
+            padding: 0 0 12px 0;
         }
         &__list{
             padding-bottom: 16px;
         }
         &__sell-btn {
             display: none;
-        }
-        &__item{
-            padding: 0 0 12px 0;
         }
         &__logout{
             padding-top: 12px;

@@ -378,6 +378,7 @@ template {
   opacity: 0;
   z-index: 3;
   cursor: pointer;
+  outline: none;
 }
 
 @media (min-width: 768px) {
@@ -458,8 +459,71 @@ template {
   width: 21px;
 }
 
-.sell-button {
+.sell-wrapper {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .sell-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 13px 15px 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .sell-wrapper-menu {
+    display: none;
+  }
+}
+
+.sell-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 39px;
+  padding: 0 30px;
+  border: 2px solid #03adfd;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #ffffff;
+  width: 176px;
+  margin-bottom: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  line-height: 16px;
+  outline: none;
+  cursor: pointer;
+}
+
+.sell-button:hover svg {
+  fill: #ff0022;
+}
+
+.sell-button__icon {
+  fill: #03adfd;
+  height: 21px;
+  width: 24px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .sell-button__icon {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sell-button {
+    width: 120px;
+    padding: 0 15px;
+    margin-bottom: 0;
+  }
 }
 
 .user {
@@ -687,15 +751,13 @@ template {
   }
   .user-menu__item {
     margin-left: -5px;
+    padding: 0 0 12px 0;
   }
   .user-menu__list {
     padding-bottom: 16px;
   }
   .user-menu__sell-btn {
     display: none;
-  }
-  .user-menu__item {
-    padding: 0 0 12px 0;
   }
   .user-menu__logout {
     padding-top: 12px;

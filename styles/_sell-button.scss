@@ -1,3 +1,48 @@
-.sell-button {
+.sell-wrapper{
     display: none;
+    @media #{$medium}{
+        display: flex;
+        margin: 13px 15px 0 0;
+    }
+}
+
+.sell-wrapper-menu {
+    @media #{$medium}{
+        display: none;
+    }  
+}
+
+.sell-button {
+    display: flex;
+    height: 39px;
+    padding: 0 30px; 
+    border: 2px solid $blue;
+    background-color: transparent;
+    border-radius: 4px;
+    color: $white;
+    width: 176px;
+    margin-bottom: 24px;
+    align-items: center;
+    font-size: 13px;
+    line-height: 16px;
+    outline: none;
+    cursor: pointer;
+    &:hover svg{
+        fill: $red;
+    }
+    &__icon{
+        fill: $blue;
+        height: 21px;
+        width: 24px;
+        transition: .2s;
+        margin-right: 20px;
+        @media #{$medium} {
+        margin-right: 10px;
+        }
+    }
+    @media #{$medium} {
+        width: 120px;
+        padding: 0 15px;
+        margin-bottom: 0;
+    }
 }
