@@ -1,3 +1,136 @@
 .user-menu {
-    display: none;
+    overflow: visible;
+    display: flex;
+    flex-wrap: wrap;
+    width: 270px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $gray;
+    box-shadow: -15px 0 35px rgba($color: #000000, $alpha: 0.5);
+    &::before{
+        content: '';
+        position: absolute;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        margin: 0 auto 0 -3200px;
+        width: 3200px;
+        height: 100%;
+        z-index: 1;
+    }
+    &__list{
+        width: 230px;
+        padding: 14px 20px 30px 25px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    &__item{
+        padding: 0 0 22px 0;
+        margin-left: -10px;
+        font-size: 15px;
+        line-height: 20px;
+        text-decoration: none;
+        transition: .2s;
+        overflow: visible;
+        &:hover svg{
+            fill: $white;
+        } 
+    }
+    &__logout {
+        text-align: center;
+        border-top: 1px solid #585858;
+        padding-top: 20px;
+        font-size: 15px;
+        line-height: 20px;
+        text-decoration: none;
+        transition: .2s;
+        &:hover svg{
+            fill: $red;
+        }   
+    }
+    &__icon{
+        height: 19px;
+        fill: $blue;
+        transition: .2s;
+    }
+    &__icon-wrapper {
+        width: 40px;
+        text-align: right;
+    }
+    &__logout-icon {
+        margin: 0 5px -4px 0;
+        height: 19px;
+        fill: $white;
+    }
+    &__link {
+        display: flex;
+        color: $white;
+        text-decoration: none;
+        overflow: visible;
+        &:hover{
+            color: $blue;
+        }
+    }
+    &__logout-link {
+        color: $white;
+        text-decoration: none;
+    }
+    &__text {
+        display: flex;
+        width: 220px;
+        padding-left: 15px;
+        text-align: left;
+        overflow: visible;
+    }
+    &__comment {
+        color: $white;
+        font-size: 12px;
+        padding: 2px 0 0 0;
+        margin: -1px 0 0 10px;
+        display: block;
+        text-align: center;
+        background-color: $blue;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+    }
+    &__close-mobile {
+        padding: 20px 0 0 0;
+        height: 60px;
+        @media #{$medium} {
+            display: none;
+        }
+    }
+    &__close-mobile-icon {
+        fill: $white;
+        width: 22px;
+        transition: .2s;
+    }
+    @media #{$medium} {
+        top: 65px;
+        display: block;
+        height: auto;
+        box-shadow: none;
+        width: 240px;
+        &::before {
+            display: none;
+        }
+        &__item{
+            margin-left: -5px;
+        }
+        &__list{
+            padding-bottom: 16px;
+        }
+        &__sell-btn {
+            display: none;
+        }
+        &__item{
+            padding: 0 0 12px 0;
+        }
+        &__logout{
+            padding-top: 12px;
+        }
+    }
+
 }

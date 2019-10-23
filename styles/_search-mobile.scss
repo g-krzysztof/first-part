@@ -13,9 +13,9 @@
         &:hover svg {
             fill: $black;
         }
-        // @media #{$small} {
-        //     display: none;
-        // }
+        @media #{$small} {
+            display: none;
+        }
     }
     &__icon {
         fill: $white;

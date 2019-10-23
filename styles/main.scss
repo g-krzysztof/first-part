@@ -1,6 +1,14 @@
 @import "normalize";
 @import "variables";
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font;
+    overflow:hidden;
+}
+
 @import "header";
 @import "logo";
 @import "search-bar";
@@ -9,3 +17,5 @@
 @import "sell-button";
 @import "user";
 @import "user-menu";
+
+@import "menu-display";
